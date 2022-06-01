@@ -10,6 +10,8 @@ const server = express();
 server.use(cors());
 server.use(express.json());
 
+server.use('/storage/capaFilme', express.static('storege/'));
+
 
 server.use(controle);
 server.use(filme);
